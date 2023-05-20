@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { App } from "components/App";
 // import "./index.css";
 import Profile from "./Profile/Profile";
 import Statistics from "./Statistics/Statistics";
@@ -22,3 +23,9 @@ root.render(
     <Profile />
   </React.StrictMode>
 );
+
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
