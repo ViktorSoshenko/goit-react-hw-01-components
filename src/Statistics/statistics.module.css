@@ -1,0 +1,20 @@
+.title {
+  font-style: normal;
+  font-size: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.statistics {
+  margin-top: 100px;
+  background-color: aliceblue;
+  text-align: center;
+}
+.statList {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  width: 200px;
+  border: solid 2px;
+  align-items: center;
+}

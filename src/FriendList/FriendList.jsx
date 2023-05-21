@@ -1,15 +1,24 @@
+import "../App.css";
+import flmc from "./friendList.module.css";
 import React from "react";
 import friends from "./friends.json";
 console.log(friends);
 function FriendListItem(props) {
   return friends.map((friend) => (
-    <li className="item" key={friend.id}>
-      <span className="status">{friend.isOnline}</span>
+    <li className={flmc.item} key={friend.id}>
+      <span
+        className={
+          friend.isOnline === true ? `${flmc.status}` : `${flmc.green}`
+        }
+      >
+        {friend.isOnline}
+      </span>
+
       <img
-        className="avatar"
+        className={flmc.avatar}
         src={friend.avatar}
         alt="User avatar"
-        width="48"
+        width="100"
       />
       <p className="name">{friend.name}</p>
     </li>
@@ -17,7 +26,7 @@ function FriendListItem(props) {
 }
 function FriendList(props) {
   return (
-    <ul className="friend-list">
+    <ul className={flmc.friendList}>
       <FriendListItem />
     </ul>
   );

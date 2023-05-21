@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px #000;
+  width: 400px;
+  padding: 50px;
+  margin: 20px;
+  align-items: center;
+}
+
+.status {
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  border-radius: 50%;
+}
+.green {
+  height: 20px;
+  width: 20px;
+  background-color: chartreuse;
+  border-radius: 50%;
+}
+
+.avatar {
+  border-radius: 10%;
+  background-color: aqua;
+  margin-left: 20px;
+  margin-right: 20px;
+}
